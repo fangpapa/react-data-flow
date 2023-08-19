@@ -1,4 +1,13 @@
 import './App.css';
+
+// 基礎render的時候不會被更新，跨組件不會被重建
+// useMemo 存值 ex 購物車qty，amount加總
+// useCallback 存function
+// 任何hook都是在function外面開地方存
+
+// useReducer 也可以不用一直傳props，利用type判斷要做什麼事，重要，小規模用
+// useContext 可以不用一直傳props，重要，包在最外層App，常用
+
 // 有生命周期的component
 import { useEffect, useState } from 'react';
 

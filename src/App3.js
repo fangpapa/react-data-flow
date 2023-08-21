@@ -5,8 +5,9 @@ import './App.css';
 // useCallback 存function
 // 任何hook都是在function外面開地方存
 
-// useReducer 也可以不用一直傳props，利用type判斷要做什麼事，重要，小規模用
-// useContext 可以不用一直傳props，重要，包在最外層App，常用
+// useReducer 也可以不用一直傳props，利用type判斷要做什麼事，重要，小規模用，優雅的管理資料
+// useContext 可以不用一直傳props，重要，包在最外層App，常用，主體資料管理，包覆的該component call不到
+// 大專案大資料量建議不要用可改用redux
 
 // 有生命周期的component
 import { useEffect, useState } from 'react';
